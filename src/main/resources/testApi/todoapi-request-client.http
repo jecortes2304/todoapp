@@ -1,0 +1,83 @@
+# Todo API
+
+###
+# group: tasks
+# @name Get all tasks
+# Fetch all task by page
+GET {{host}}/tasks?
+    pageSize=5&
+    page=0
+Accept: application/json
+
+<> ./Tasks fetched successfully.200.json
+// {{host}}/tasks?pageSize=5&page=0
+<> ./Bad request.400.json
+// {{host}}/tasks?pageSize=5&page=0
+
+###
+# group: tasks
+# @name Create a task
+# Create a task given a payload
+PUT {{host}}/tasks/task
+Content-Type: application/json
+Accept: application/json
+
+{
+  "description": "Test description",
+  "title": "Test title",
+  "endedDate": "2024-02-13T00:03:10"
+}
+
+<> ./Task created successfully.201.json
+// {{host}}/tasks/task
+<> ./Bad request.400.json
+// {{host}}/tasks/task
+
+###
+@taskId = 1
+# group: tasks
+# @name Get task by taskId
+# Get task by taskId
+GET {{host}}/tasks/task/{{taskId}}
+Accept: application/json
+
+<> ./Task fetched successfully.200.json
+// {{host}}/tasks/task/:taskId
+<> ./Bad request.400.json
+// {{host}}/tasks/task/:taskId
+<> ./Not Found.404.json
+// {{host}}/tasks/task/:taskId
+
+###
+# group: tasks
+# @name Delete a task
+# Delete a task by an idTask
+DELETE {{host}}/tasks/task/{{taskId}}
+Accept: application/json
+
+<> ./Task deleted successfully.200.json
+// {{host}}/tasks/task/:taskId
+<> ./Not found.404.json
+// {{host}}/tasks/task/:taskId
+
+###
+# group: tasks
+# @name Update a task
+# Update a task by an idTask and a taskUpdate payload
+PATCH {{host}}/tasks/task/{{taskId}}?
+    taskStatus=ON_TIME
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Title updated>",
+  "description": "Description updated",
+  "finished": true
+}
+
+<> ./Task updated successfully.200.json
+// {{host}}/tasks/task/:taskId?taskStatus=ON_TIME
+<> ./Bad request.400.json
+// {{host}}/tasks/task/:taskId?taskStatus=ON_TIME
+<> ./Not found.404.json
+// {{host}}/tasks/task/:taskId?taskStatus=ON_TIME

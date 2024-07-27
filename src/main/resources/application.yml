@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: todo-app
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+      fail-on-ignored-properties: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: admin
+    url: "jdbc:postgresql://localhost:5432/todoapp"
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  devtools:
+    livereload:
+      enabled: true
+springdoc:
+  api-docs:
+    version: openapi_3_0
+    enabled: true
+  swagger-ui:
+    use-root-path: true
+    path: 'api-docs'
+  show-actuator: true
+server:
+  port: 8000

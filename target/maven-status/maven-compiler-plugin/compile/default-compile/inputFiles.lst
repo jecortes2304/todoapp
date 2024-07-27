@@ -1,0 +1,17 @@
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\service\TaskService.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\persistence\repository\TaskRepository.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\TodoappApplication.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\util\schemas\StandardOkResponse.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\util\mapper\IMapper.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\dto\TaskCreateDTO.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\dto\TaskUpdateDTO.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\util\schemas\StandardResponse.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\util\schemas\StandardErrorResponse.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\config\SwaggerConfig.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\exception\ValidationExceptionHandler.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\dto\RoleDTO.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\persistence\entity\Task.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\util\mapper\TaskCreateDTOToTask.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\controller\TaskController.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\dto\TaskStatusDTO.java
+D:\PROYECTOS\IntellijProjects\TestingProjects\JavaSpringBoot\todoapp\src\main\java\com\cortestudios\todoapp\config\SwaggerCodeBlockTransformer.java
